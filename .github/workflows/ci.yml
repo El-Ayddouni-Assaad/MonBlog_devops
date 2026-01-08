@@ -4,6 +4,13 @@ on:
     branches : ["main","develop"]
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      run: |
+        ls -l
+        echo "hello tester"
   build:
 
     runs-on: ubuntu-latest
